@@ -3,8 +3,11 @@ const app = express();
 const path = require('path');
 const PORT = 3000;
 
+
+
 const routes = require('./routes/index');
 const bodyParser = require('body-parser');
+const homeRoutes = require('./routes/homeRouter');
 
 /* Settings*/
 app.set('PORT', process.env.PORT || 3000)
@@ -23,10 +26,12 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 /*Routes */
 app.use(routes);
+app.use(homeRoutes);
 
 
 /* Static files*/
 /* --- views  errors*/
+app.use(express.static("public"));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
