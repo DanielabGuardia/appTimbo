@@ -3,36 +3,38 @@ const app = express();
 const path = require('path');
 const PORT = 3000;
 
-
-
-const routes = require('./routes/index');
-const bodyParser = require('body-parser');
+/* Enrutadores */
 const homeRoutes = require('./routes/homeRouter');
 
+app.use(express.static('./public'));
+
 /* Settings*/
-app.set('PORT', process.env.PORT || 3000)
-app.set('views', path.join(__dirname, 'views' ));
+
+
 app.set('view engine', 'ejs');
+app.set('views', path.resolve(__dirname, 'views'));
 
 
-/*Midlewares*/
-app.use((req, res, next) => {
-   console.log(`${req.url} -${req.method}`); 
-   next();
-})  
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+/*capturar información*/
+ 
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
 
+app.use(express.static('../public'));
 
 /*Routes */
-app.use(routes);
-app.use(homeRoutes);
+/*app.use(routes);*/
+app.use('/', homeRoutes);
 
 
 /* Static files*/
-/* --- views  errors*/
-app.use(express.static("public"));
-app.use(express.static(path.join(__dirname, 'public')));
+
+
+
+
+
+/* --- views  errors
+app.use(express.static(path.join(__dirname, 'public')));*/
 
 
 

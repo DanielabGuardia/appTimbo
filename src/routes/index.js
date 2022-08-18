@@ -1,4 +1,4 @@
-const express = require('express');
+/*const express = require('express');
 const router = express.Router();
 
 router.get('/index', (req, res) =>{
@@ -7,4 +7,4 @@ router.get('/index', (req, res) =>{
     });
 })
 
-module.exports = router;
+module.exports = router;*/
