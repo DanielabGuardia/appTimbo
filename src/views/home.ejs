@@ -1,26 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+        <%- include('./partials/head.ejs') %> 
 </head>
 
-<body>
-    <header class="headerHome">
-        <div class="logo">
-            <img class="logo" src="/images/Logo.jpg" alt="Logo de la Empresa"></div>
-           <h2> Vivero Timbó 122 n996</h2>
-        <nav class="headerHome">
-            <ul>
-                <a href="#">Productos</a>
-                <a href="#">Visitanos!</a>      
-                <a href="#">Servicios</a>      
-            </ul>
-        </nav>
-    </header>
-    
+<body class="home">
+    <%- include('./partials/headerHome.ejs') %>
+    <%- include('./partials/carouselHome.ejs') %>
+
     <section class="contenido">
      <p>
         Lorem ipsum dolor sit amet 
@@ -183,10 +170,8 @@
 
     </section>
 
-    <footer class="footerHome" width="100%">
-        <div class="footerHome">
-            <p>Vení a visitarnos</p>
-        </div>
+    <footer class="footerHome">
+        <%- include('./partials/footerHome.ejs') %>
     </footer>
 </body>
 </html>
