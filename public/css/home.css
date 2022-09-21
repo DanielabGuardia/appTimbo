@@ -52,6 +52,53 @@ nav.headerHome {
      
  }
 
+ section.categorias {
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    padding-top: 100px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-around;
+ }
+
+ div.plantas {
+    width: 150px;
+    height: 180px;
+ }
+ 
+ img.plantas {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    text-decoration: overline;
+ }
+
+ div.huerta {
+    width: 150px;
+    height: 180px;
+ }
+
+ div.macetas {
+    width: 150px;
+    height: 180px;
+ }
+
+ div.remedios {
+    width: 150px;
+    height: 180px;
+ }
+
+ div.espacios {
+    width: 150px;
+    height: 180px;
+ }
+
+ div.ofertas {
+    width: 150px;
+    height: 180px;
+ }
+
  .carousel carousel-dark slide { 
     width: 100%; 
     height: 400px;

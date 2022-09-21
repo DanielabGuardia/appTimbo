@@ -1,0 +1,28 @@
+div#carouselExampleDark.carousel.carousel-dark.slide {
+    width: 100%;
+    height: 350px;
+   display: flex;
+}
+
+div.carousel-inner {
+    width: 100%;
+    height: 350px;
+  
+}
+div.caroucel-item.active {
+    width: 100%;
+    height: 200px;
+    
+}
+
+img {
+    width: 100%;
+    height: 150px;
+}
+
+img#carousel-home.d-block.w-100 {
+    width: 100%;
+    height: 150px;
+    box-sizing: content-box;
+   
+}
