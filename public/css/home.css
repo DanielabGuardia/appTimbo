@@ -3,6 +3,7 @@
 body{
     background: #fffffa;
    height: 1800px;
+   position: relative;
 }
 
 header {

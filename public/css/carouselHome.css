@@ -1,13 +1,17 @@
 div#carouselExampleDark.carousel.carousel-dark.slide {
-    width: 100%;
-    height: 350px;
+    width: 90%;
+    height: 250px;
    display: flex;
 }
 
 div.carousel-inner {
-    width: 100%;
-    height: 350px;
+    width: 90%;
+    height: 250px;
   
+}
+img#caroucel-home.d-block.w-100 {
+    width: 100%;
+    height: 250px;
 }
 div.caroucel-item.active {
     width: 100%;
