@@ -1,0 +1,47 @@
+.header {
+    background-color: #bbe7c4;
+   position: fixed; 
+   width: 100%;
+   top: 0;
+   z-index: 10;
+   height: 90px; 
+}
+
+.container_logo {
+    height: 90px;
+    overflow: hidden;
+    display: flex; 
+}
+
+div.logo {
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+img.logo {
+    width: 80px;
+    height: 80px;
+}
+
+h1 {
+    padding-top: 10px;
+    padding-left: 230px;
+}
+
+nav.header {
+    width: 50%;
+   height: 35px;
+    display: flex;
+    padding-left: 180px;
+   
+ }
+ 
+ nav.header a {
+     display: inline-block;
+     color: #1a1c4d;
+     text-decoration: none;
+     padding: 35px 20px ;
+     
+ }

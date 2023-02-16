@@ -32,8 +32,9 @@ img.logo {
     height: 80px;
 }
 
-h2 {
-    padding-left: 45px;
+h1 {
+    padding-top: 10px;
+    padding-left: 230px;
 }
 
 nav.headerHome {
