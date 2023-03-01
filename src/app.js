@@ -4,7 +4,7 @@ const path = require('path');
 const PORT = 3008;
 
 /* Enrutadores */
-const homeRoutes = require('./routes/homeRouter');
+const homeRouter = require('./routes/homeRouter.js');
 
 app.use(express.static('./public'));
 
@@ -24,7 +24,7 @@ app.use(express.static('../public'));
 
 /*Routes */
 /*app.use(routes);*/
-app.use('/', homeRoutes);
+app.use('/', homeRouter);
 
 
 /* Static files*/

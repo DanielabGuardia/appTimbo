@@ -1,0 +1,42 @@
+<div class="header">
+    <div class="content">
+<header class="header">
+    <div class="logo">
+        <img class="logo" src="/images/header/Logo.jpg" alt="Logo de la Empresa"></div>
+       <h1> VIVERO TIMBÓ</h1>
+    <nav class="header">
+        <ul>
+            <a href="#">Productos</a>
+            <a href="#">Visitanos!</a>      
+            <a href="#">Servicios</a>      
+       
+        </ul>
+    </nav>
+    <nav class="user_navbar">
+        <% if (typeof session.user=="undefined" ) { %>
+            <a href="/users/login"><i class="far fa-user-circle"></i></a>
+            <% }else{ %>
+                <a class="avatar" href="/users/profile/<%= session.user.id %>">
+                    <div class="avatar-img">
+                        <img src="/images/users/<%= session.user.avatar %>" alt="imagen de perfil">
+                        <span class="session"></span>
+                    </div>
+                </a>
+
+                <div class="menu-user">
+                    <a href="/users/profile/<%= session.user.id %>">Mis datos</a>
+                    <a href="/users/logout">Cerrar sesión</a>
+                    <% if (session.user.rol===1) { %>
+                        <a href="/admin">Administrador</a>
+                        <% } %>
+
+                </div>
+                <a href="/shoppingCart"><i class="fas fa-shopping-cart"></i></a>
+                <% } %>
+
+
+    </nav>
+
+</header>
+</div>
+</div>
