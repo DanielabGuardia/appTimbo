@@ -28,10 +28,10 @@ let controller = {
 
 }
 
-module.exports = controller
+module.exports = controller*/
 
 
-/*const homeController = {
+const homeController = {
  home: (req, res) => {
     res.render('home');
  } ,
@@ -39,4 +39,4 @@ module.exports = controller
 
 };
  
-module.exports = homeController;  */
+module.exports = homeController;  

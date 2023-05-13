@@ -7,7 +7,6 @@ router.get('/', controller.index)
 //router.get('/locals', controller.locals)
 
 
-/*
 router.get('/', (req, res) =>{
     res.render('home', {
         title: "TimbóApp",
